@@ -13,3 +13,7 @@ maven-example-1
 maven-example-2
 ---------------
 * I18N with maven-localizer-plugin
+
+maven-example-3
+---------------
+* Maven Settings Password Encryption
