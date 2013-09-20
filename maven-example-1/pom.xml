@@ -17,11 +17,28 @@
 	<packaging>jar</packaging>
 
 	<dependencies>
+	
+		<!-- ******************************************************************* -->
+		<!-- SLF4J (Simple Logging Facade for Java)                              -->
+		<!-- ******************************************************************* -->
 		<dependency>
 			<groupId>org.slf4j</groupId>
 			<artifactId>slf4j-api</artifactId>
 			<version>1.6.6</version>
 		</dependency>
+		
+		<!-- Binding for Simple implementation
+		     - outputs all events to System.err
+		     - only messages of level INFO and higher are printed -->
+		<!--
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-simple</artifactId>
+			<version>1.6.6</version>
+		</dependency>
+		-->
+		
+		<!-- Binding for log4j version 1.2 -->
 		<dependency>
 			<groupId>org.slf4j</groupId>
 			<artifactId>slf4j-log4j12</artifactId>
