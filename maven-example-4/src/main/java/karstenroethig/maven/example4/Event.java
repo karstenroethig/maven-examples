@@ -10,10 +10,20 @@ import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 
+//import org.hibernate.annotations.DynamicInsert;
+//import org.hibernate.annotations.DynamicUpdate;
 import org.hibernate.annotations.GenericGenerator;
 
 @Entity
 @Table( name = "EVENTS" )
+
+// dynamic insert/update since hibernate 4.x
+//@DynamicInsert
+//@DynamicUpdate
+
+// dynamic insert/update in hibernate 3.x
+//@org.hibernate.annotations.Entity( dynamicInsert = true, dynamicUpdate = true )
+
 public class Event {
 
 	private Long id;
