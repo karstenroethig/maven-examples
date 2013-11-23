@@ -29,3 +29,4 @@ maven-example-5
 ---------------
 * Barcodes with [Barbecue]{http://barbecue.sourceforge.net}
 * Barcode Interleave 2 of 5
+* Unit- and Integration-Test with [Maven Surefire Plugin]{http://maven.apache.org/surefire/maven-surefire-plugin/index.html} and [Maven Failsafe Plugin]{http://maven.apache.org/surefire/maven-failsafe-plugin/index.html}
