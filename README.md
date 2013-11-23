@@ -24,3 +24,8 @@ maven-example-4
 * [Hibernate](http://hibernate.org)
 * [H2 Database](http://www.h2database.com/html/main.html)
 * Spring JDBC Template
+
+maven-example-5
+---------------
+* Barcodes with [Barbecue]{http://barbecue.sourceforge.net}
+* Barcode Interleave 2 of 5
