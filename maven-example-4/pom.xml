@@ -17,6 +17,7 @@
 	<packaging>jar</packaging>
 
 	<dependencies>
+		<!-- Hibernate -->
 		<dependency>
 			<groupId>org.hibernate</groupId>
 			<artifactId>hibernate-core</artifactId>
@@ -35,6 +36,13 @@
 			<groupId>com.h2database</groupId>
 			<artifactId>h2</artifactId>
 			<version>1.2.145</version>
+		</dependency>
+		
+		<!-- Spring JDBC Template -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-jdbc</artifactId>
+			<version>3.2.5.RELEASE</version>
 		</dependency>
 
 		<dependency>

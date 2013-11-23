@@ -23,3 +23,4 @@ maven-example-4
 * JDBC (Statements & Prepared Statements)
 * [Hibernate](http://hibernate.org)
 * [H2 Database](http://www.h2database.com/html/main.html)
+* Spring JDBC Template
