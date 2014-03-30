@@ -34,3 +34,7 @@ maven-example-5
 maven-example-6
 ---------------
 * JAXB (source generation, marshal, unmarshal)
+
+maven-example-7
+---------------
+* Job/Task scheduling with [Quartz](http://www.quartz-scheduler.org/)
