@@ -9,6 +9,7 @@ maven-example-1
 * Command-line application
 * Logging with [SLF4J](http://www.slf4j.org) and [Log4J](http://logging.apache.org/log4j)
 * Using maven-assembly-plugin to build a ZIP archive
+* Attach additional artifacts to your project using [build-helper-maven-plugin](http://mojo.codehaus.org/build-helper-maven-plugin/)
 
 maven-example-2
 ---------------
