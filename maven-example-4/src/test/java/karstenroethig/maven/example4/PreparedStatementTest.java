@@ -97,7 +97,6 @@ public class PreparedStatementTest extends TestCase {
 				}
 			}
 		}
-		
 	}
 
 }

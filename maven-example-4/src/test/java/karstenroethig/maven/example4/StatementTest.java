@@ -84,7 +84,6 @@ public class StatementTest extends TestCase {
 				}
 			}
 		}
-		
 	}
 
 }

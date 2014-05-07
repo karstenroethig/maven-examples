@@ -24,11 +24,11 @@ public class MavenPasswordEncryptionTest extends TestCase {
 		 * Master-Passwort verschlüsseln mvn --encrypt-master-password
 		 * <password>
 		 */
-		String encryptedMasterPassword1 = encrypt(MASTER_PASSWORD,
-				DefaultSecDispatcher.SYSTEM_PROPERTY_SEC_LOCATION);
+		String encryptedMasterPassword1 = encrypt( MASTER_PASSWORD,
+				DefaultSecDispatcher.SYSTEM_PROPERTY_SEC_LOCATION );
 
-		String encryptedMasterPassword2 = encrypt(MASTER_PASSWORD,
-				DefaultSecDispatcher.SYSTEM_PROPERTY_SEC_LOCATION);
+		String encryptedMasterPassword2 = encrypt( MASTER_PASSWORD,
+				DefaultSecDispatcher.SYSTEM_PROPERTY_SEC_LOCATION );
 
 		assertFalse(encryptedMasterPassword1.equals(encryptedMasterPassword2));
 	}
@@ -40,39 +40,39 @@ public class MavenPasswordEncryptionTest extends TestCase {
 		 * Passwort mit Hilfe des Master-Passwortes verschlüsseln mvn
 		 * --encrypt-password <password>
 		 */
-		String encryptedPassword1 = encrypt(PASSWORD, MASTER_PASSWORD);
+		String encryptedPassword1 = encrypt( PASSWORD, MASTER_PASSWORD );
 
-		String encryptedPassword2 = encrypt(PASSWORD, MASTER_PASSWORD);
+		String encryptedPassword2 = encrypt( PASSWORD, MASTER_PASSWORD );
 
-		assertFalse(encryptedPassword1.equals(encryptedPassword2));
+		assertFalse( encryptedPassword1.equals( encryptedPassword2 ) );
 	}
 
 	@Test
 	public void testDecryptPassword() throws Exception {
 
-		String masterPassword = decrypt(MASTER_PASSWORD_ENCRYPTED,
-				DefaultSecDispatcher.SYSTEM_PROPERTY_SEC_LOCATION);
+		String masterPassword = decrypt( MASTER_PASSWORD_ENCRYPTED,
+				DefaultSecDispatcher.SYSTEM_PROPERTY_SEC_LOCATION );
 
-		assertEquals(MASTER_PASSWORD, masterPassword);
+		assertEquals( MASTER_PASSWORD, masterPassword );
 
-		String password = decrypt(PASSWORD_ENCRYPTED, masterPassword);
+		String password = decrypt( PASSWORD_ENCRYPTED, masterPassword );
 
-		assertEquals(PASSWORD, password);
+		assertEquals( PASSWORD, password );
 	}
 
-	private String encrypt(String password, String masterPassword)
+	private String encrypt( String password, String masterPassword )
 			throws PlexusCipherException {
 
 		DefaultPlexusCipher dc = new DefaultPlexusCipher();
 
-		return dc.encryptAndDecorate(password, masterPassword);
+		return dc.encryptAndDecorate( password, masterPassword );
 	}
 
-	private String decrypt(String encryptedPassword, String masterPassword)
+	private String decrypt( String encryptedPassword, String masterPassword )
 			throws PlexusCipherException {
 
 		DefaultPlexusCipher dc = new DefaultPlexusCipher();
 
-		return dc.decryptDecorated(encryptedPassword, masterPassword);
+		return dc.decryptDecorated( encryptedPassword, masterPassword );
 	}
 }

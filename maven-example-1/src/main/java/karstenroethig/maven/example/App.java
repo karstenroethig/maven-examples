@@ -19,6 +19,5 @@ public class App {
 		
 		b.setTemperature( i1 );
 		b.setTemperature( i2 );
-		
 	}	
 }

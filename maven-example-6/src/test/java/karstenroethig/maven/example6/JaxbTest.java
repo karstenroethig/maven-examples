@@ -47,20 +47,20 @@ public class JaxbTest extends TestCase {
 		 * Marshal
 		 */
 		JAXBContext context = JAXBContext.newInstance( Project.class );
-        Marshaller marshaller = context.createMarshaller();
-        marshaller.setProperty( Marshaller.JAXB_FORMATTED_OUTPUT, Boolean.TRUE );
+		Marshaller marshaller = context.createMarshaller();
+		marshaller.setProperty( Marshaller.JAXB_FORMATTED_OUTPUT, Boolean.TRUE );
 
-        File file = new File( "target/" + project.getName() + ".xml" );
-        
-        marshaller.marshal( project, file );
-        
-        /*
-         * Unmarshal
-         */
-        Unmarshaller unmarshaller = context.createUnmarshaller();
-        
-        Project proj = (Project)unmarshaller.unmarshal( file );
-        
-        System.out.println( "Porject: " +  proj.getName() + " (key: " + proj.getKey() + ")" );
+		File file = new File( "target/" + project.getName() + ".xml" );
+
+		marshaller.marshal( project, file );
+
+		/*
+		 * Unmarshal
+		 */
+		Unmarshaller unmarshaller = context.createUnmarshaller();
+
+		Project proj = (Project)unmarshaller.unmarshal( file );
+
+		System.out.println( "Porject: " +  proj.getName() + " (key: " + proj.getKey() + ")" );
 	}
 }
