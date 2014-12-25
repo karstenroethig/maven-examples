@@ -39,3 +39,13 @@ maven-example-6
 maven-example-7
 ---------------
 * Job/Task scheduling with [Quartz](http://www.quartz-scheduler.org/)
+
+maven-example-8
+---------------
+* Simple web application
+* Using [Tomcat7 Maven Plugin](http://tomcat.apache.org/maven-plugin-2.0/tomcat7-maven-plugin/) for quick start (use `mvn clean tomcat7:run`)
+
+maven-example-9
+---------------
+* Handling HTTP requests with [Apache HttpClient](http://hc.apache.org/)
+* Simple Socket-Server
