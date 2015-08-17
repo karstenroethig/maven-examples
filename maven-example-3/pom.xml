@@ -17,6 +17,10 @@
 	<packaging>jar</packaging>
 
 	<dependencies>
+		
+		<!-- ******************************************************************* -->
+		<!-- Maven Settings Password Encryption                                  -->
+		<!-- ******************************************************************* -->
 		<dependency>
 			<groupId>org.sonatype.plexus</groupId>
 			<artifactId>plexus-cipher</artifactId>
@@ -26,6 +30,15 @@
 			<groupId>org.sonatype.plexus</groupId>
 			<artifactId>plexus-sec-dispatcher</artifactId>
 			<version>1.4</version>
+		</dependency>
+		
+		<!-- ******************************************************************* -->
+		<!-- Jasypt - Java Simplified Encryption                                 -->
+		<!-- ******************************************************************* -->
+		<dependency>
+			<groupId>org.jasypt</groupId>
+			<artifactId>jasypt</artifactId>
+			<version>1.9.2</version>
 		</dependency>
 
 		<dependency>

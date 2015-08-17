@@ -21,7 +21,7 @@ public class MavenPasswordEncryptionTest extends TestCase {
 	public void testEncryptMasterPassword() throws Exception {
 
 		/*
-		 * Master-Passwort verschlüsseln mvn --encrypt-master-password
+		 * Master-Passwort verschlÃ¼sseln mvn --encrypt-master-password
 		 * <password>
 		 */
 		String encryptedMasterPassword1 = encrypt( MASTER_PASSWORD,
@@ -37,7 +37,7 @@ public class MavenPasswordEncryptionTest extends TestCase {
 	public void testEncryptPassword() throws Exception {
 
 		/*
-		 * Passwort mit Hilfe des Master-Passwortes verschlüsseln mvn
+		 * Passwort mit Hilfe des Master-Passwortes verschlÃ¼sseln mvn
 		 * --encrypt-password <password>
 		 */
 		String encryptedPassword1 = encrypt( PASSWORD, MASTER_PASSWORD );
