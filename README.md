@@ -36,6 +36,7 @@ maven-example-5
 maven-example-6
 ---------------
 * JAXB (source generation, marshal, unmarshal)
+* Parse JSON
 
 maven-example-7
 ---------------
@@ -44,6 +45,7 @@ maven-example-7
 maven-example-8
 ---------------
 * Simple web application
+* Bootstrap with [WebJars](http://www.webjars.org/)
 * Using [Tomcat7 Maven Plugin](http://tomcat.apache.org/maven-plugin-2.0/tomcat7-maven-plugin/) for quick start (use `mvn clean tomcat7:run`)
 
 maven-example-9
