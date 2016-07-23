@@ -52,3 +52,7 @@ maven-example-9
 ---------------
 * Handling HTTP requests with [Apache HttpClient](http://hc.apache.org/)
 * Simple Socket-Server
+
+maven-example-10
+----------------
+* Reducing Boilerplate Code with [Project Lombok](https://projectlombok.org/)
