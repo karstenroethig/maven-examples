@@ -1,10 +1,10 @@
 @echo off
-setlocal ENABLEDELAYEDEXPANSION
 
-set PWD=%~dp0
- 
-FOR /R "%PWD%\lib" %%G IN (*.jar) DO set CP=!CP!;%%G
+set BAT_DIR=%~dp0%
 
-java -Xmx512m -cp "%CP%" karstenroethig.maven.example.App
+REM java.exe have to be found in %PATH%
+set JAVA_BIN=java.exe
 
-pause
+"%JAVA_BIN%" -Xrs -Xmx256m ^
+	-cp %BAT_DIR%\lib\* ^
+	karstenroethig.maven.example.App
