@@ -11,9 +11,7 @@
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
 
-	<groupId>karstenroethig.maven.examples</groupId>
 	<artifactId>maven-example-4</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
 	<dependencies>
@@ -21,34 +19,35 @@
 		<dependency>
 			<groupId>org.hibernate</groupId>
 			<artifactId>hibernate-core</artifactId>
-			<version>4.2.7.Final</version>
+<!-- 			<version>4.2.7.Final</version> -->
+			<version>5.2.10.Final</version>
 		</dependency>
 
 		<!-- Hibernate uses jboss-logging for logging, for the tutorials we will use the sl4fj-simple backend -->
 		<dependency>
 			<groupId>org.slf4j</groupId>
 			<artifactId>slf4j-simple</artifactId>
-			<version>1.6.1</version>
+			<version>1.7.25</version>
 		</dependency>
 
 		<!-- The tutorials use the H2 in-memory database -->
 		<dependency>
 			<groupId>com.h2database</groupId>
 			<artifactId>h2</artifactId>
-			<version>1.2.145</version>
+			<version>1.4.196</version>
 		</dependency>
 		
 		<!-- Spring JDBC Template -->
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-jdbc</artifactId>
-			<version>3.2.5.RELEASE</version>
+			<version>4.3.10.RELEASE</version>
 		</dependency>
 
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
-			<version>4.10</version>
+			<version>4.12</version>
 			<scope>test</scope>
 		</dependency>
 	</dependencies>

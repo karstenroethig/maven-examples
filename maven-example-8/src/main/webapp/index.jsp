@@ -9,9 +9,9 @@
 	<meta name="description" content="">
 	<meta name="author" content="Karsten Röthig">
 	
-	<title>Hash Generator</title>
+	<title>Hello World</title>
 	
-	<link href="../webjars/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+	<link href="/app/webjars/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
 </head>
 
 <body>
@@ -20,8 +20,8 @@
 
 
 	<!-- Placed at the end of the document so the pages load faster -->
-	<script src="../webjars/jquery/1.11.1/jquery.min.js"></script>
-	<script src="../webjars/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+	<script src="/app/webjars/jquery/1.11.1/jquery.min.js"></script>
+	<script src="/app/webjars/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </body>
 
 </html>
