@@ -56,3 +56,4 @@ maven-example-9
 maven-example-10
 ----------------
 * Reducing Boilerplate Code with [Project Lombok](https://projectlombok.org/)
+* Creating consistent equals(Object), toString(), hashCode(), and compareTo(Object) methods with [commons-lang](https://commons.apache.org/proper/commons-lang/)

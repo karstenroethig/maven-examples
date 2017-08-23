@@ -32,6 +32,7 @@
 		<module>maven-example-7</module>
 		<module>maven-example-8</module>
 		<module>maven-example-9</module>
+		<module>maven-example-10</module>
 	</modules>
 
 	<build>
