@@ -11,50 +11,54 @@ import javax.xml.bind.DatatypeConverter;
 
 import junit.framework.TestCase;
 
-public class URLConnectionTest extends TestCase {
-
-	public void testConnection() throws Exception {
-		
+public class URLConnectionTest extends TestCase
+{
+	public void testConnection() throws Exception
+	{
 		URL url = new URL( "http://www.google.de" /* "http://localhost:8090" */ );
 		String username = null;
 		String password = "";
-		
+
 		assertNotNull( url );
 
 		InputStream in = null;
-		
-		try {
+
+		try
+		{
 			URLConnection urlConnection = url.openConnection();
-			
-			if( username != null ) {
-				
+
+			if ( username != null )
+			{
 				String userpass = username + ":" + password;
 				String basicAuth = "Basic " + new String( DatatypeConverter.printBase64Binary( userpass.getBytes() ) );
 				
 				urlConnection.setRequestProperty( "Authorization", basicAuth );
 			}
-			
+
 			assertTrue( urlConnection instanceof HttpURLConnection );
-			
+
 			HttpURLConnection httpConnection = (HttpURLConnection)urlConnection;
-			
+
 			int statuscode = httpConnection.getResponseCode();
-			
+
 			assertEquals( statuscode, HttpURLConnection.HTTP_OK );
-			
+
 			in = httpConnection.getInputStream();
-			
+
 			BufferedReader reader = new BufferedReader( new InputStreamReader( in ) );
-			
+
 			String line = "";
-			
-			while( ( line = reader.readLine() ) != null ) {
+
+			while ( ( line = reader.readLine() ) != null )
+			{
 				System.out.println( line );
 			}
-			
-		} finally {
-			
-			if( in != null ) {
+
+		}
+		finally
+		{
+			if ( in != null )
+			{
 				in.close();
 			}
 		}

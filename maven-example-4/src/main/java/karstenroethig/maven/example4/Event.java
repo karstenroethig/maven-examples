@@ -24,50 +24,56 @@ import org.hibernate.annotations.GenericGenerator;
 // dynamic insert/update in hibernate 3.x
 //@org.hibernate.annotations.Entity( dynamicInsert = true, dynamicUpdate = true )
 
-public class Event {
-
+public class Event
+{
 	private Long id;
-
 	private String title;
-
 	private Date date;
-	
-	public Event() {
+
+	public Event()
+	{
 		// this form used by Hibernate
 	}
-	
-	public Event( String title, Date date ) {
+
+	public Event( String title, Date date )
+	{
 		// for application use, to create new events
 		this.title = title;
 		this.date = date;
 	}
-	
+
 	@Id
 	@GeneratedValue( generator="increment" )
 	@GenericGenerator( name="increment", strategy="increment" )
-	public Long getId() {
+	public Long getId()
+	{
 		return id;
 	}
-	
-	public void setId( Long id ) {
+
+	public void setId( Long id )
+	{
 		this.id = id;
 	}
-	
+
 	@Temporal( TemporalType.TIMESTAMP )
 	@Column( name="EVENT_DATE" )
-	public Date getDate() {
+	public Date getDate()
+	{
 		return date;
 	}
-	
-	public void setDate( Date date ) {
+
+	public void setDate( Date date )
+	{
 		this.date = date;
 	}
-	
-	public String getTitle() {
+
+	public String getTitle()
+	{
 		return title;
 	}
-	
-	public void setTitle( String title ) {
+
+	public void setTitle( String title )
+	{
 		this.title = title;
 	}
 }

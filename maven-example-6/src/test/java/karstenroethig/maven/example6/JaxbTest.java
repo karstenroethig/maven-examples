@@ -13,36 +13,36 @@ import karstenroethig.maven.example6.jaxb.Issue;
 import karstenroethig.maven.example6.jaxb.Issues;
 import karstenroethig.maven.example6.jaxb.Project;
 
-public class JaxbTest extends TestCase {
-
-	public void testMarshal() throws Exception {
-		
+public class JaxbTest extends TestCase
+{
+	public void testMarshal() throws Exception
+	{
 		Project project = new Project();
-		
+
 		project.setKey( "KEY" );
 		project.setName( "projectname" );
-		
+
 		Issues issues = new Issues();
 		List<Issue> issuesList = issues.getIssue();
-		
+
 		Issue issue = new Issue();
-		
+
 		issue.setNumber( new BigInteger( "1" ) );
 		issue.setSummary( "Summary" );
 		issue.setDescription( "Description" );
-		
+
 		issuesList.add( issue );
-		
+
 		issue = new Issue();
-		
+
 		issue.setNumber( new BigInteger( "2" ) );
 		issue.setSummary( "Summary" );
 		issue.setDescription( "Description" );
-		
+
 		issuesList.add( issue );
-		
+
 		project.setIssues( issues );
-		
+
 		/*
 		 * Marshal
 		 */
